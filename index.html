@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="shortcut icon" href="smg.jpeg">
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -17,10 +23,12 @@
         <div class="header-container">
             <div class="logo">
                 <img src="smg.jpeg.jpg" alt="SMG Logo">
-               
             </div>
             <nav>
-                <ul>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="navMenu">
                     <li><a href="#home"><i class="fas fa-home"></i> Página Inicial</a></li>
                     <li><a href="#about"><i class="fas fa-building"></i> Empresa</a></li>
                     <li><a href="#services"><i class="fas fa-cogs"></i> Serviços</a></li>
@@ -34,18 +42,14 @@
         <div class="hero-content">
             <h2>Bem-vindo à <span>SMG</span></h2>
             <p>Excelência em manutenção residencial e comercial.</p>
-            <a href= "https://wa.me/5511974737239" target="_blank" #contact class="btn-primary">Entre em Contato</a>
+            <a href="https://wa.me/5511974737239" target="_blank" class="btn-primary">Entre em Contato</a>
         </div>
     </section>
 
     <section id="about" class="section about">
         <div class="container">
             <h2>Sobre Nós</h2>
-            <p> Com anos de experiência, a SMG é uma empresa especializada em serviços de manutenção para residências e empresas, com foco na excelência e satisfação do cliente. Atuamos em toda a região de São Paulo, oferecendo soluções rápidas e eficientes para necessidades de manutenção preventiva e corretiva em diversos segmentos, como elétrica, hidráulica, reparos gerais e muito mais.
-
-                Nossa missão é proporcionar tranquilidade e confiança aos nossos clientes, garantindo a qualidade de cada serviço prestado. Contamos com uma equipe altamente capacitada e comprometida com o atendimento de excelência, utilizando sempre as melhores práticas e materiais do mercado.
-                
-                A SMG se destaca pela agilidade, atendimento personalizado e pela garantia de serviços realizados com profissionalismo e segurança. Se você precisa de serviços de manutenção de confiança, a SMG é a sua melhor escolha!.</p>
+            <p>Com anos de experiência, a SMG é uma empresa especializada em serviços de manutenção para residências e empresas...</p>
         </div>
     </section>
 
@@ -75,7 +79,6 @@
                 <h3>Ar-Condicionado</h3>
                 <p>Instalação e manutenção de sistemas de ar-condicionado.</p>
             </div>
-
             <div class="service-item">
                 <img src="enca.jpeg" alt="Serviço de hidráulica">
                 <h3>Serviços Hidráulicos</h3>
@@ -92,12 +95,9 @@
                 <p>
                     <i class="fas fa-phone-alt"></i> Ligue Agora: (11) 97473-7239
                     <br>
-                    
-                        <img src="whats.jpeg" alt="WhatsApp" style="width: 30px; height: 30px; vertical-align: middle;">
-                        <a href="https://wa.me/5511974737239" target="_blank">WhatsApp: (11) 97473-7239</a>
-                
+                    <img src="whats.jpeg" alt="WhatsApp" style="width: 30px; height: 30px; vertical-align: middle;">
+                    <a href="https://wa.me/5511974737239" target="_blank">WhatsApp: (11) 97473-7239</a>
                 </p>
-                
             </form>
         </div>
     </section>
@@ -106,5 +106,7 @@
         <p>&copy; 2024 SMG - Serviços de Manutenção Geral. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Inclusão do arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>

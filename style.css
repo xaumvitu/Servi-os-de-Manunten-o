@@ -252,3 +252,66 @@ footer {
 footer p {
     margin: 0;
 }
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;  /* Organiza os itens verticalmente */
+        align-items: center;  /* Centraliza os itens */
+        width: 100%;  /* Faz o menu ocupar toda a largura da tela */
+        background-color: #1b1b1b;  /* Define um fundo para o menu */
+        position: absolute;
+        top: 80px;  /* Ajuste para o espaço da barra de navegação */
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 12px 15px;
+        font-size: 1.2rem;  /* Tamanho maior para facilitar o clique */
+        display: block;  /* Faz os itens ocuparem uma linha inteira */
+        text-align: center;  /* Centraliza o texto */
+    }
+/* Estilo para dispositivos móveis */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+}
+
+#navMenu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#navMenu li {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        width: 100%;
+    }
+
+    #navMenu.active {
+        display: flex;
+    }
+
+    #navMenu li {
+        width: 100%;
+        text-align: center;
+    }
+}
+}
