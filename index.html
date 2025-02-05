@@ -8,26 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="shortcut icon" href="smg.jpeg">
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("navMenu");
-            menu.classList.toggle("active");
-        }
-    </script>
 </head>
 <body>
     <header>
-        <!-- Barra Superior -->
-
-        <!-- Cabeçalho Principal -->
         <div class="header-container">
             <div class="logo">
                 <img src="smg.jpeg.jpg" alt="SMG Logo">
             </div>
             <nav>
-                <button class="menu-toggle" onclick="toggleMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
                 <ul id="navMenu">
                     <li><a href="#home"><i class="fas fa-home"></i> Página Inicial</a></li>
                     <li><a href="#about"><i class="fas fa-building"></i> Empresa</a></li>
@@ -86,21 +74,19 @@
             </div>
             <div class="service-item">
                 <img src="enca.jpeg" alt="Serviço de hidráulica">
-                <h3>manutenções em caixa de agua</h3>
-                <p>.</p>
-            </div>7
+                <h3>Manutenções em caixa de água</h3>
+                <p>Manutenção e limpeza de caixas d'água.</p>
+            </div>
             <div class="service-item">
-                <img src="enca.jpeg" alt="Serviço de hidráulica">
-                <h3>Reaparos em telhados em estrutura metálica</h3>
+                <img src="enca.jpeg" alt="Serviço de telhado">
+                <h3>Reparos em telhados de estrutura metálica</h3>
                 <p>Correção de vazamentos, instalações e manutenção.</p>
             </div>
             <div class="service-item">
-                <img src="enca.jpeg" alt="Serviço de hidráulica">
-                <h3>Reparos em Aquecedores elétricos</h3>
+                <img src="enca.jpeg" alt="Serviço de aquecedores">
+                <h3>Reparos em Aquecedores Elétricos</h3>
                 <p>Correção de vazamentos, instalações e manutenção.</p>
             </div>
-        
-            
         </div>
     </section>
 
@@ -108,22 +94,17 @@
         <div class="container">
             <h1>Contato</h1>
             <p>Entre em contato pelo WhatsApp ou ligue para:</p>
-            <form id="contactForm" onsubmit="enviarFormulario(event)">
-                <p>
-                    <i class="fas fa-phone-alt"></i> Ligue Agora: (11) 97473-7239
-                    <br>
-                    <img src="whats.jpeg" alt="WhatsApp" style="width: 30px; height: 30px; vertical-align: middle;">
-                    <a href="https://wa.me/5511974737239" target="_blank">WhatsApp: (11) 97473-7239</a>
-                </p>
-            </form>
+            <p>
+                <i class="fas fa-phone-alt"></i> Ligue Agora: (11) 97473-7239
+                <br>
+                <img src="whats.jpeg" alt="WhatsApp" style="width: 30px; height: 30px; vertical-align: middle;">
+                <a href="https://wa.me/5511974737239" target="_blank">WhatsApp: (11) 97473-7239</a>
+            </p>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 SMG - Serviços de Manutenção Geral. Todos os direitos reservados.</p>
     </footer>
-
-    <!-- Inclusão do arquivo JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
